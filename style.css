@@ -232,6 +232,12 @@ li {
     font-weight: bold;
 }
 
+ul li a {
+    margin-left: 15px; /* Altere o valor em px para aumentar ou diminuir o espaço */
+}
+
+
+
 /**/
 
 @-webkit-keyframes blurFadeInOut {
