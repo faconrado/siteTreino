@@ -236,6 +236,57 @@ ul li a {
     margin-left: 15px; /* Altere o valor em px para aumentar ou diminuir o espaço */
 }
 
+/* Estilo do título do treino */
+.titulo-treino {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estrutura da tabela */
+.tabela-treino {
+    width: 100%;
+    max-width: 600px; /* Limita a largura para não espalhar demais */
+    border-collapse: collapse;
+}
+
+/* Espaçamento e alinhamento das linhas */
+.tabela-treino td {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Linha sutil divisória */
+    vertical-align: middle;
+}
+
+/* Alinha o botão do vídeo totalmente à direita */
+.tabela-treino td:last-child {
+    text-align: right;
+}
+
+/* Texto em negrito do exercício */
+.texto-negrito {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Estilo do link transformado em botão vermelho com ícone */
+.botao-video {
+    display: inline-block;
+    background-color: #ff0000; /* Vermelho estilo YouTube */
+    color: white !important;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao-video:hover {
+    background-color: #cc0000; /* Vermelho mais escuro */
+}
+
+
 
 
 /**/
