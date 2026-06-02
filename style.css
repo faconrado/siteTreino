@@ -171,12 +171,30 @@ h1.main, p.demos {
 	transform: translate(-50%, -50%);
 }
 
-header.fundoTreinoF{
+header.fundoTreinoF {
 	width: 100%;
 	min-height: 100vh;
   	background-image: 
 	linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
 	url('img/arnold.jpg');
+  	background-size: cover;
+  	background-position: center top;
+	background-repeat: no-repeat;  	
+  	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+  	color: white;
+	padding: 40px 20px;
+}
+
+header.fundo-treinoA {
+	width: 100%;
+	min-height: 100vh;
+  	background-image: 
+	linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+	url('img/Vivi-Winkler-pro-800x500.jpg');
   	background-size: cover;
   	background-position: center top;
 	background-repeat: no-repeat;  	
