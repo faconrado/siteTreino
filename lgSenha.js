@@ -1,20 +1,20 @@
 const botao = document.getElementById("Entrar");
-const campoUsername = document.getElementById("username");
-const campoPassword = document.getElementById("password");
 
-botao.addEventListener("click", () => {
 
-    const login = campoUsername.value;
-    const senha = campoPassword.value;
-    const loginUser = login.toUpperCase();
-    if (loginUser === "FABRIZZIO" && senha === "32665590"){
-        window.location.href = "treinoFabrizzio.html";
+if (botao) {
+    botao.addEventListener("click", () => {
+        const campoUsername = document.getElementById("username").value.trim().toUpperCase();
+        const campoPassword = document.getElementById("password").value.trim();
+
+    if (login === "FABRIZZIO" && senha === "32665590"){
         alert("Login bem-sucedido! Bem-vindo, Fabrizzio!");
-    }else if (loginUser === "ANDRESSA" && senha === "Dessadilu"){
-        window.location.href = "treinoAndressa.html";
+        window.location.href = "treinoFabrizzio.html";        
+    } else if (login === "ANDRESSA" && senha === "Dessadilu"){
         alert("Login bem-sucedido! Bem-vindo, Andressa!");
+        window.location.href = "treinoAndressa.html";        
     } else {
         alert("Login ou senha incorretos. Tente novamente.");
     }
 
 });
+}
