@@ -10,6 +10,9 @@ botao.addEventListener("click", () => {
     if (loginUser === "FABRIZZIO" && senha === "32665590"){
         window.location.href = "treinoFabrizzio.html";
         alert("Login bem-sucedido! Bem-vindo, Fabrizzio!");
+    }else if (loginUser === "ANDRESSA" && senha === "Dessadilu"){
+        window.location.href = "treinoAndressa.html";
+        alert("Login bem-sucedido! Bem-vindo, Andressa!");
     } else {
         alert("Login ou senha incorretos. Tente novamente.");
     }
