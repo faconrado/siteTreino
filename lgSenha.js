@@ -3,8 +3,8 @@ const botao = document.getElementById("Entrar");
 
 if (botao) {
     botao.addEventListener("click", () => {
-        const campoUsername = document.getElementById("username").value.trim().toUpperCase();
-        const campoPassword = document.getElementById("password").value.trim();
+        const login = document.getElementById("username").value.trim().toUpperCase();
+        const senha = document.getElementById("password").value.trim();
 
     if (login === "FABRIZZIO" && senha === "32665590"){
         alert("Login bem-sucedido! Bem-vindo, Fabrizzio!");
