@@ -251,6 +251,7 @@ li {
 }
 
 .texto-serie {
+	font-weight: normal;
 	font-style: italic;
 	color: #ffffff;
 }
