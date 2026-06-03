@@ -250,6 +250,11 @@ li {
     font-weight: bold;
 }
 
+.texto-serie {
+	font-style: italic;
+	color: #ffffff;
+}
+
 ul li a {
     margin-left: 15px; /* Altere o valor em px para aumentar ou diminuir o espaço */
 }
@@ -264,7 +269,7 @@ ul li a {
 /* Estrutura da tabela */
 .tabela-treino {
     width: 100%;
-    max-width: 600px; /* Limita a largura para não espalhar demais */
+    max-width: 700px; /* Limita a largura para não espalhar demais */
     border-collapse: collapse;
 }
 
