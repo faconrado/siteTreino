@@ -1,7 +1,10 @@
 const botao = document.getElementById("Entrar");
 
-
-if (botao) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Impede a página de recarregar
+  console.log('Formulário enviado!');
+  // Insira aqui a sua lógica de login
+  if (botao) {
     botao.addEventListener("click", () => {
         const login = document.getElementById("username").value.trim().toUpperCase();
         const senha = document.getElementById("password").value.trim();
@@ -18,3 +21,4 @@ if (botao) {
 
 });
 }
+});

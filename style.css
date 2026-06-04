@@ -256,6 +256,13 @@ li {
 	color: #ffffff;
 }
 
+.texto-descanso {
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	color: #ffffff;
+}
+
 ul li a {
     margin-left: 15px; /* Altere o valor em px para aumentar ou diminuir o espaço */
 }
