@@ -1,13 +1,4 @@
 const inputPeso = document.getElementById('Kg');
-
-window.addEventListener('DOMContentLoaded', () => {
-    const savedPeso = localStorage.getItem('peso');
-    if (savedPeso) {
-        inputPeso.value = savedPeso;
-    }
-});
-
-const inputPeso = document.getElementById('Kg');
 const btnSalvar = document.getElementById('btn-salvar-treino');
 
 window.addEventListener('DOMContentLoaded', () => {
