@@ -7,18 +7,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-inputPeso.addEventListener('input', () => {
-    localStorage.setItem('peso', inputPeso.value);
-});
+const inputPeso = document.getElementById('Kg');
+const btnSalvar = document.getElementById('btn-salvar-treino');
 
 window.addEventListener('DOMContentLoaded', () => {
-    const btnSalvar = document.getElementById('btn-salvar-treino');
-    btnSalvar.value = localStorage.getItem('btnSalvarTreino') || '';
+    const savedPeso = localStorage.getItem('peso');
+    if (savedPeso) {
+        inputPeso.value = savedPeso;
+    }
 });
 
 btnSalvar.addEventListener('click', () => {
-    localStorage.setItem('btnSalvarTreino', btnSalvar.value);
+    localStorage.setItem('peso', inputPeso.value);
 
     // Feedback visual para saber se deu certo.
-    alert('Treino salvo com sucesso!');
+    alert('Peso salvo com sucesso!');
 });
