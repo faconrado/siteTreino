@@ -276,30 +276,43 @@ ul li a {
     margin-left: 15px; /* Altere o valor em px para aumentar ou diminuir o espaço */
 }
 
-/* Estilo do título do treino */
-.titulo-treino {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Estrutura da tabela */
-.tabela-treino {
-    width: 100%;
-    max-width: 700px; /* Limita a largura para não espalhar demais */
-    border-collapse: collapse;
+/* Espaçamento e alinhamento correto das colunas da tabela */
+.tabela-treino tr {
+    display: grid;
+    grid-template-columns: 2fr 100px 60px 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória sutil escura */
+    padding: 10px 0;
+	width: 100%;
 }
 
 /* Espaçamento e alinhamento das linhas */
 .tabela-treino td {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee; /* Linha sutil divisória */
-    vertical-align: middle;
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap; /* Impede que o texto quebre em duas linhas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Corta com reticências se o texto for absurdamente gigante */
+}
+
+/* Coluna do input de carga */
+.tabela-treino td:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+/* Coluna com a palavra fixa 'Carga' */
+.tabela-treino td:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-align: left;
 }
 
 /* Alinha o botão do vídeo totalmente à direita */
 .tabela-treino td:last-child {
     text-align: right;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* Texto em negrito do exercício */
@@ -517,46 +530,30 @@ ul li a {
 	width: 90%;
     height: auto;
     top: 70%;
-}
+	}
 
-.sp-container h2 {
+	.sp-container h2 {
     font-size: 42px;
     line-height: 50px;
-  }
+  	}
 
-  .sp-container h2.frame-4 {
+	.sp-container h2.frame-4 {
     font-size: 70px;
-  }
+  	}
 
-  .treinoFCabecalho {
+	.treinoFCabecalho {
     font-size: 32px;
-  }
+  	}
 
-  .container-treino {
+	.container-treino {
     width: 100%;
     padding: 0 15px;
-  }
+  	}
 
-  .tabela-treino {
-    width: 100%;
-    font-size: 14px;
-  }
 
-  .tabela-treino td {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 8px 0;
-  }
-
-  .tabela-treino td:last-child {
-    text-align: left;
-    margin-bottom: 12px;
-  }
-
-  .botao-video {
+	.botao-video {
     width: 100%;
     text-align: center;
     padding: 10px;
-  }
+  	}
 }

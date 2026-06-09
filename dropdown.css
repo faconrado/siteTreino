@@ -1,29 +1,38 @@
-p.titulo-treino {
-    cursor: pointer;
+/* Alinha o título e posiciona a seta na extremidade direita */
+.titulo-treino {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
     user-select: none;
-    padding: 10px;
-    background-color: #f4f4f4;
+    padding: 12px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
     margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo sutil */
+    border-radius: 5px;
 }
 
-p.titulo-treino .seta {
-    transition: transform 0.3s ease;
+/* Configuração estrutural para animar e girar a seta indicadora */
+.titulo-treino .seta {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
 }
 
-p.titulo-treino.ativo .seta {
+/* Aplica a rotação para baixo quando o dropdown expande */
+.titulo-treino.ativo .seta {
     transform: rotate(90deg);
 }
 
-.conteudo-treino {
-    display: none;
-    padding: 10px;
-    border-left: 2px solid #ccc;
-    margin-bottom: 15px;
+/* Força as tabelas a iniciarem ocultas respeitando a estrutura do bloco */
+table.tabela-treino {
+    display: none !important;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.conteudo-treino.mostrar {
-    display: block;
+/* Injeta a visibilidade correta com prioridade ao ativar a classe mostrar */
+table.tabela-treino.mostrar {
+    display: table !important;
 }
