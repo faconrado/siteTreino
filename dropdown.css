@@ -1,0 +1,29 @@
+p.titulo-treino {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+}
+
+p.titulo-treino .seta {
+    transition: transform 0.3s ease;
+}
+
+p.titulo-treino.ativo .seta {
+    transform: rotate(90deg);
+}
+
+.conteudo-treino {
+    display: none;
+    padding: 10px;
+    border-left: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.conteudo-treino.mostrar {
+    display: block;
+}
